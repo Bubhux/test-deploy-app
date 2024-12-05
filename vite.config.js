@@ -15,8 +15,10 @@ import svgr from 'vite-plugin-svgr';
 
 
 export default defineConfig({
+    base: './',
     assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl', '**/*.svg'],
     build: {
+        outDir: 'dist',
         assetsInlineLimit: 1024,
     },
     resolve: {
